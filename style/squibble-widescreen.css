@@ -1,0 +1,101 @@
+#mainProfile {
+    top: 0;
+    left: 0;
+
+    margin: 2vh 0 0 2vw;
+    padding: 1vh 1vw;
+    width: 20vw;
+    height: 40vh;
+
+    z-index: 10;
+}
+
+#mainNavigation {
+    top: 42vh;
+    left: 0vw;
+
+    margin: 2vh 0 0 2vw;
+    padding: 0vh 0vw;
+    width: 20vw;
+    height: 47vh;
+}
+#subNavigation {
+    top: 9vh;
+    left: 22vw;
+
+    margin: 2vh 0 0 2vw;
+    padding: 0 0;
+    width: 20vw;
+    height: 80vh;
+}
+
+#mainTools, #subTools {
+    margin: 2vh 0 0 2vw;
+    padding: 0;
+    width: 20vw;
+    height: 5vh;
+}
+    #mainTools {
+        bottom: 2vh;
+        left: 0vw;
+    }
+    #subTools {
+        top: 0vh;
+        left: 22vw;
+    }
+
+#lightTheme, #darkTheme {
+    bottom: 0;
+    left: 0;
+
+    margin: 0;
+    padding: 0;
+
+    width: 5vw;
+    height: 5vh;
+    max-width: 5vh;
+    max-height: 5vw;
+}
+
+#mainSearch {
+    top: 2vh;
+    right: 2vw;
+
+    margin: 0;
+    padding: 0;
+    width: 52vw;
+    height: 6.5vh;
+}
+
+#mainDisplay {
+    top: 9vh;
+    left: 44vw;
+
+    margin: 2vh 0 0 2vw;
+    padding: 1vh 1vw;
+    width: 52vw;
+    height: 80vh;
+}
+
+#mainInput {
+    bottom: 2vh;
+    right: 2vw;
+
+    margin: 0;
+    padding: 1vh 1vw;
+    width: 52vw;
+    height: auto;
+    min-height: 5vh;
+}
+
+#mainContact {
+    bottom: 2vh;
+    left: 24vw;
+
+    margin: 0;
+    padding: 0;
+
+    width: 20vw;
+    height: 5vh;
+    max-height: 5vw;
+}

@@ -1,0 +1,561 @@
+button {
+    border: none;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.sqblForm {
+    display: block;
+    height: 100%;;
+    overflow: auto;
+}
+
+.sqblForm label {
+    display: inline-block;
+    width: auto;
+
+    text-align: center;
+}
+.sqblForm .icon {
+    float: left;
+}
+
+.sqblForm input {
+    outline: none;
+}
+
+.loginButton {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 10%;
+    
+    border: none;
+}
+
+#mainLogin,
+#mainLogin .sqblForm input {
+    background: #999;
+    color: #333;
+}
+
+#mainLogin .sqblForm input {
+    box-shadow: inset 0 -0.5px 0 0 #333;
+}
+
+#mainLogin,
+#mainLogin .sqblForm input,
+#mainLogin button,
+#mainLogin label {
+    font-size: 4vh;
+    font-family: Coustard;
+    color: #222;
+    vertical-align: bottom;
+}
+
+#mainLogin .loginTools button,
+#mainLogin .loginButton {
+    background: #777;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+}
+
+#mainLogin {
+    display: block;
+    position: fixed;
+    left: calc(50vw - 45vh);
+    top: 5vh;
+
+    box-sizing: border-box;
+    width: 90vh;
+    height: 90vh;
+
+    border-radius: 2vh;
+    border: 1px solid #111;
+
+    z-index: 100;
+
+    overflow: hidden;
+}
+
+#mainLogin .loginTools{
+    display: block;
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+
+    text-align: center;
+}
+
+#mainLogin .loginTools button {
+    float: left;
+
+    box-sizing: border-box;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+
+    transition: all 0.7s ease-in-out;
+}
+
+.form-signin .signin,
+.form-register .register {
+    text-shadow: 2px 0 15px #fff !important;
+    color: #fff !important;
+}
+
+#mainLogin .signinApp,
+#mainLogin .registerApp {
+    display: block;
+    position: relative;
+    top: 0%;
+    width: 100%;
+    height: 80%;
+
+    box-sizing: border-box;
+    padding: 2vh 1vw;
+}
+
+#mainLogin .sqblForm li {
+    padding-top: 1vh;
+}
+
+#mainLogin .sqblForm label {
+    width: 35%;
+}
+
+#mainLogin .sqblForm input {
+    width: 55%;
+
+    box-sizing: border-box;
+    padding: 0;
+
+    border: none;
+}
+
+#mainLogin ul {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    list-style: none;
+
+    overflow: auto;
+}
+
+#mainLogin li {
+    display: inline-block;
+    position: relative;
+    
+    width: 90%;
+}
+
+.sqblForm::-webkit-scrollbar {
+    width: 2vw;
+}
+.sqblForm::-webkit-scrollbar-track {
+    background: #ddd;
+}
+.sqblForm::-webkit-scrollbar-thumb {
+    background: #111;
+}
+
+#mainProgress {
+    display: block;
+    position: fixed;
+    right: 15vw;
+    top: 20vh;
+
+    width: 30vw;
+    height: 5vh;
+
+    background: #111;
+    border: 1px solid #000;
+
+    overflow: hidden;
+}
+
+#mainProgress .bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 0%;
+    height: 5vh;
+
+    background-color: #555;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='#999' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#loading h1 {
+    display: block;
+    position: fixed;
+    top: 5vh;
+    right: 15vw;
+
+    margin: 0;
+    padding: 0;
+    width: 30vw;
+
+    text-align: center;
+    font-size: 10vh;
+    font-family: Lobster Two;
+    font-weight: 300;
+    color: #ccc;
+}
+
+#squibble-engine {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    /*
+    overflow: hidden;
+    */
+    transition: transform 1.2s ease;
+}
+
+body #squibble-engine.disabled {
+    box-shadow: -5px -5px 25px -5px #000;
+    border-radius: 15px;
+    transform: scale(0.7) rotate(4deg) translateY(30vh);
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+
+.icon svg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#mainSearch {
+    display: block;
+    position: fixed;
+
+    box-sizing: border-box;
+
+    font-size: 4vh;
+    font-family: Yantramanav;
+    text-align: center;
+
+    outline: none;
+}
+
+#mainSearch .icon {
+    display: inline-block;
+    position: relative;
+    
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+
+    color: #999;
+}
+
+#mainSearch .icon {
+    float: left;
+}
+#mainSearch input {
+    float: right;
+}
+
+#mainSearch input {
+    display: inline-block;
+    width: calc(100% - 6vh);
+    height: 100%;
+
+    padding-left: 1vw;
+
+    box-sizing: border-box;
+    border: none;
+
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+
+    font-size: 3vh;
+}
+
+.darkBackground #mainSearch {
+    border: none;
+    color: #111;
+}
+
+
+.lightBackground #mainSearch {
+    border: none;
+    background: #555;
+    color: #eee;
+}
+
+#mainProfile {
+    display: block;
+    position: fixed;
+    
+    box-sizing: border-box;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.minimized {
+    max-height: 12.5vw;
+}
+
+#mainProfile {
+    transition: all 0.7s ease-in-out;
+}
+
+.profileTools {
+    transition: opacity 0.7s ease-in-out;
+}
+
+#mainProfile:hover:not(.minimized) {
+    width: 30vw;
+    max-height: 40vh;
+}
+
+#mainProfile:hover .profileTools {
+    opacity: 1;
+}
+
+#mainProfile .profileTools {
+    opacity: 0;
+}
+
+#circleContainer {
+    display: block;
+    position: absolute;
+    top: 6.5vh;
+    left: 0vw;
+
+    margin: 0;
+    padding: 0;
+    width: 20vw;
+
+    text-align: center;
+}
+
+.profileCircled {
+    display: inline-block;
+    position: relative;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    width: 18vw;
+    height: 18vw;
+    max-height: 30vh;
+    max-width: 30vh;
+    border: 0.7vw solid #fff;
+    border-radius: 50%;
+
+    background: #ccc;
+    box-shadow: 0 0 10px 0 #111;
+    overflow: hidden;
+}
+
+.profileCircled img {
+    width: 100%;
+    height: 100%;
+
+    filter: grayscale(80%);
+}
+
+.username {
+    display: block;
+    position: absolute;
+    top: 0;
+
+    margin: 0.5vh 0;
+    padding: 0;
+    width: 18vw;
+
+    font-size: 5.5vh;
+    font-family: Farsan;
+}
+
+.darkBackground .username {
+    color: #444;
+}
+
+.lightBackground .username {
+    color: #ccc;
+}
+
+.userrank {
+    display: block;
+    position: absolute;
+    bottom: 5vh;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 18vw;
+
+    font-size: 3vw;
+    font-family: Farsan;
+
+    text-shadow: 0 -2px 5px #fff;
+}
+
+.userstars {
+    display: block;
+    position: absolute;
+    bottom: 2vh;
+
+    margin: 0;
+    padding: 0;
+    width: 18vw;
+    height: 5vh;
+
+    color: #555;
+}
+
+.userstars svg {
+    float: left;
+}
+
+svg {
+    stroke: currentColor;
+    fill: currentColor;
+    stroke-width: 0;
+}
+
+.darkBackground .userrank {
+    color: #444;
+}
+
+.lightBackground .userrank {
+    color: #aaa;
+}
+
+.profileTools {
+    display: block;
+    position: absolute;
+    top: 0vh;
+    left: 21vw;
+
+    width: 7vw;
+    height: 40vh;
+
+    border: 0.5px solid #888;
+    background: #aaa;
+
+    color: #777;
+}
+
+#subNavigation {
+    display: block;
+    position: fixed;
+    
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#mainDisplay {
+    display: block;
+    position: fixed;
+    
+    box-sizing: border-box;
+}
+
+#mainInput {
+    display: block;
+    position: fixed;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    cursor: text;
+}
+
+#mainInput span {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 3vh;
+
+    overflow-y: auto;
+}
+
+#mainInput span:focus {
+    transition: all 0.5s ease;
+    height: 20vh !important;
+}
+#mainContact {
+    display: block;
+    position: fixed;
+}
+
+.basicToolbar {
+    display: block;
+    position: fixed;
+
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.basicToolbar span {
+    box-sizing: border-box;
+    margin: 0 0.25vw;
+    width: 3.5vw;
+    max-width: 5vh;
+    background: #777;
+    box-shadow: inset -5px 5px 2vw -5px #aaa;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.basicToolbar span:hover {
+    box-shadow: inset 5px -5px 2vw 0 #555;
+}
+
+.basicToolbar span svg {
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+}
+
+#mainContact span, 
+.basicToolbar span {
+
+    color: #333;
+}

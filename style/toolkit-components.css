@@ -1,0 +1,20 @@
+#lightTheme, #darkTheme {
+    display: inline-block;
+    position: relative;
+
+    box-sizing: border-box;
+
+    border: 0px solid #111;
+    outline: none;
+
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.darkBackground #darkTheme {
+    display: none;
+}
+
+.lightBackground #lightTheme {
+    display: none;
+}

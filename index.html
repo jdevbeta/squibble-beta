@@ -1,0 +1,63 @@
+<!doctype HTML>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Coustard|Farsan|Yantramanav:300" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style/animate.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/toolkit-components.css" />
+    <link rel="stylesheet" href="./style/core-components.css" />
+    <link rel="stylesheet" href="./style/squibble-widescreen.css" />
+    <link rel="stylesheet" href="./style/squibble-portrait.css" />
+    <link rel="stylesheet" href="./style/theme.css" />
+    <link rel="stylesheet" href="./style/darkTheme.css" />
+    <link rel="stylesheet" href="./style/lightTheme.css" />
+    <style id="disabled">
+        #mainSearch *,
+        #mainProfile *,
+        #mainNavigation *,
+        #mainTools *,
+        #subTools *,
+        #subNavigation *,
+        #mainDisplay *,
+        #mainInput *,
+        #mainContact * {
+            display: none !important;
+        }
+    </style>
+<title> Squibble Main </title>
+</head>
+<body>
+<div id="squibble-login">
+    <loading-assets></loading-assets>
+    <mainlogin></mainlogin>
+</div>
+<div id="squibble-engine" class="darkBackground disabled">
+    <mainsearch></mainsearch>
+    <profile :user-data=user></profile>
+    <navigation :navlocation=app.workspace.data navid="mainNavigation"></navigation>
+    <sqbl-tools :tools="app.workspace.tools" bar-id="mainTools"></sqbl-tools>
+    <sqbl-tools :tools="app.storage.tools" bar-id="subTools"></sqbl-tools>
+    <sqbl-tools :tools="app.storage.tools" bar-id="mainContact"></sqbl-tools>
+    <navigation :navlocation=app.storage.data navid="subNavigation"></navigation>
+    <maindisplay></maindisplay>
+    <textinput></textinput>
+</div>
+<div id="squibble-notifications">
+
+</div>
+<div id="squibble-windows">
+
+</div>
+    <script src="./script/vue.js"></script>
+    <script src="./script/vue-ico.js"></script>
+    <script src="./script/main.js"></script>
+    <script src="./script/toolkit-scripts.js"></script>
+    <script src="./script/squibble-templates.js"></script>
+    <script src="./script/squibble-engine.js"></script>
+    <script src="./script/toolkit-components.js"></script>
+    <script src="./script/login-components.js"></script>
+    <script src="./script/core-components.js"></script>
+    <script src="./script/squibble-computer.js"></script>
+</body>
+</html>
